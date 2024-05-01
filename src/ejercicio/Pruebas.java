@@ -49,7 +49,7 @@ class Pruebas {
 				Arguments.of("44","+"), // Test 6
 				Arguments.of("4444","+"), // Test 7
 				Arguments.of("-222","+"), // Test 8
-				Arguments.of("000","+"), // Test 9: Falla: El programa solo detecta si hay 3 caracteres
+				Arguments.of("000","+"), // Test 9: Falla: El programa solo detecta si hay 3 caracteres.
 				Arguments.of("1000","+"), // Test 14
 				Arguments.of("","+") // Test 15
 			);
@@ -58,8 +58,8 @@ class Pruebas {
 	private static Stream<Arguments> testFailB() {
 		return Stream.of(
 				Arguments.of("333",""), // Test 16
-				Arguments.of("333","+++"), // Test 17: Falla: El programa no detecta si hay 2 o mas simbolos en el campo
-				Arguments.of("333","++"), // Test 18: Falla: El programa no detecta si hay 2 o mas simbolos en el campo
+				Arguments.of("333","+++"), // Test 17: Falla: El programa no detecta si hay 2 o mas simbolos en el campo.
+				Arguments.of("333","++"), // Test 18: Falla: El programa no detecta si hay 2 o mas simbolos en el campo.
 				Arguments.of("333","A"), // Test 19
 				Arguments.of("333","4"), // Test 20
 				Arguments.of("333", "_") // Test 21
