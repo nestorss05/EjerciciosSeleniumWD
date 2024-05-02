@@ -55,11 +55,12 @@ class Pruebas {
 	private static Stream<Arguments> testFailB() {
 		return Stream.of(
 				Arguments.of("Felipe Filipino",""), // Test 5
-				Arguments.of("Felipe Filipino","16-04-2006"), // Test 6
-				Arguments.of("Felipe Filipino","16/04/2006.5"), // Test 7
-				Arguments.of("Felipe Filipino","-05/04/2006"), // Test 8
-				Arguments.of("Felipe Filipino","33/04/2006"), // Test 9 - Falla porque no se controlan si los dias son mayores que 31
-				Arguments.of("Felipe Filipino", "00/03/2006"), // Test 10
+				Arguments.of("Felipe Filipino","AA-04-2006"), // Test 6
+				Arguments.of("Felipe Filipino","16-04-2006"), // Test 7
+				Arguments.of("Felipe Filipino","16/04/2006.5"), // Test 8
+				Arguments.of("Felipe Filipino","-05/04/2006"), // Test 9
+				Arguments.of("Felipe Filipino","33/04/2006"), // Test 10 - Falla porque no se controlan si los dias son mayores que 31
+				Arguments.of("Felipe Filipino", "00/03/2006"), // Test 11
 				Arguments.of("Felipe Filipino", "32/03/2006"), // Test 16 - Falla porque no se controlan si los dias son mayores que 31
 				Arguments.of("Felipe Filipino", "16/-04/2006"), // Test 17
 				Arguments.of("Felipe Filipino", "16/33/2006"), // Test 18
